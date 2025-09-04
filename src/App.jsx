@@ -56,7 +56,7 @@ const getPages = (totalTodos, perPage, currentPage) => {
     <>
     <ul>
       {currTodos.map((el,idx) =>
-        <li key={el.id}>{idx + 1}. {el.title}. {el.title}
+        <li key={el.id}>{ firstTodosIndex + idx + 1}. {el.title}. {el.title}
           <i
             onClick={() => {
               setModalWindow(prev => !prev)
